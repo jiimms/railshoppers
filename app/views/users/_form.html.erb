@@ -1,0 +1,31 @@
+<%=form_for @user do |user|%>
+
+<%=user.label :name %><br>
+<%=user.text_field :name %><br>
+
+<%=user.label :email %><br>
+<%=user.text_field :email %><br>
+
+<%=user.label :year_of_study %><br>
+<%=user.text_field :year_of_study %><br>
+
+<%=user.label :brief_intro %><br>
+<%=user.text_area :brief_intro %><br>
+
+<%=user.label :achievements %><br>
+<%=user.text_area :achievements %><br>
+
+<%=user.label :rgsoc_reason %><br>
+<%=user.text_area :rgsoc_reason %><br>
+
+<%=user.label :projects %><br>
+<%=user.text_area :projects %><br>
+
+<%=user.label :languages %><br>
+<%=user.text_field :languages %><br>
+
+<%=user.label :fav_food %><br>
+<%=user.text_field :fav_food %><br>
+
+<%=user.submit%>
+<%end%>
