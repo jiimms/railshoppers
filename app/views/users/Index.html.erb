@@ -1,2 +1,6 @@
-<h1>Users#Index</h1>
-<p>Find me in app/views/users/Index.html.erb</p>
+<h1>Rails Hoppers</h1>
+
+<%@users.each do |user|%>
+
+<h3><%= link_to user.name, user_path(user) %></h3>
+<%end%>
