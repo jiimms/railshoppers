@@ -3,22 +3,24 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Name : Ishita Chourasia
 
-* Ruby version
+Email-id: ishitachourasia@gmail.com
 
-* System dependencies
+Year of study: 2017
 
-* Configuration
+Brief Introduction: I am a final year student pursuing B.Tech in ICT from DAIICT, Gandhinagar.I am technology enthusiast and have done many projects in various programming languages. I like to do competitive programming and in my free time I play volleyball. 
 
-* Database creation
+Achievements: Poster presenter and Student Scholar at the Grace Hopper Celebration India 2016 by Anita Borg Institute.
 
-* Database initialization
+ Came 17th in International Women's Hackathon(IWH) 2016, organised by HackerEarth(Username-ishitach).
 
-* How to run the test suite
+ Amongst top 25 women coders around globe in March challenge 2015, organized by Codechef (Handle-ishitach).
 
-* Services (job queues, cache servers, search engines, etc.)
+Your reasons for applying to RGSOC: I want to contribute to open source, so I think this is a great platform. Also, I have started development recently so Ruby on Rails would help me in that. 
 
-* Deployment instructions
+Projects of your Choice: Public lab and Open farm
 
-* ...
+Which Languages you prefer: I prefer to code in Java 
+
+Which is your favorite food: Rajma 
