@@ -1,4 +1,14 @@
-<%=link_to "Team Page", root_path%>
-<%=link_to "New User", new_user_path%>
-<%=link_to "", root_path%>
-<%=link_to "", root_path%>
+
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Rails Hoppers", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Team Page", root_path %></li>
+        <li><%= link_to "New User", new_user_path %></li>
+        <li><%= link_to "Log in", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

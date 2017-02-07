@@ -1,7 +1,8 @@
-<h1><%=@user.name%></h1>
+<%if @user.name == "Ishita Chaurasia"%>
+	<h1><%=@user.name%></h1>
 
 <h3>Basic Information</h3>
-<p>Name <br><%=@user.name%><br></p>
+<p>Name</p><p><%=@user.name%></p>
 <p>Email<br> <%=@user.email%><br></p>
 <p>Year of Study <br> <%=@user.year_of_study%><br></p>
 <p>Give a brief introduction about yourself<br> <%=@user.brief_intro%><br></p>
@@ -12,3 +13,7 @@
 <p>Which is your favorite food<br> <%=@user.fav_food%><br></p>
 
 <p><%=link_to "Edit Details", edit_user_path(@user)%></p>
+
+<%else%>
+<%= render 'jimmy'%>
+<%end%>
