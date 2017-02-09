@@ -34,12 +34,12 @@ class UsersController < ApplicationController
   private
 
   def find_user
-  	@user=User.find(params[:id])
+  	@user=User.find_by(id: params[:id])
   end
 
   def user_params
   	params.require(:user).permit(:name, :email, :year_of_study,
   				 :brief_intro, :achievements, :rgsoc_reason, 
-  				 :projects, :languages, :fav_food)
+  				 :projects, :languages, :fav_food, :avatar)
   end
 end

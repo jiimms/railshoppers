@@ -1,0 +1,9 @@
+<div class ="jumbotron">
+
+	<%j = User.first.as_json %>
+	<%j.except!("id", "updated_at", "created_at", "avatar").each do |k, v|%>
+	<strong><%=  k %></strong>
+	<p><%= v %></p>
+	<% end%>
+
+</div>

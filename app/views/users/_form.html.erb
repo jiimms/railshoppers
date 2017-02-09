@@ -1,33 +1,45 @@
-<%= render 'shared/errors', object: @user %>
+<div class ="jumbotron">
+	<%= render 'shared/errors', object: @user %>
+	<div class="row">
+	 	 <div class="col-md-8 col-md-offset-2">
+	 	 	<h1>Basic Information</h1>
 
-<%=form_for @user do |user|%>
+			<%=form_for @user do |user|%>
 
-<%=user.label :name %><br>
-<%=user.text_field :name %><br>
+			<%=user.label :name, "Name" %><br>
+			<%=user.text_field :name ,class: 'form-control'%><br>
 
-<%=user.label :email %><br>
-<%=user.text_field :email %><br>
+			<%=user.label :email %><br>
+			<%=user.text_field :email ,class: 'form-control'%><br>
 
-<%=user.label :year_of_study %><br>
-<%=user.text_field :year_of_study %><br>
+			<%=user.label :year_of_study %><br>
+			<%=user.text_field :year_of_study ,class: 'form-control'%><br>
 
-<%=user.label :brief_intro %><br>
-<%=user.text_area :brief_intro %><br>
+			<%=user.label :brief_intro, "Give a brief introduction about yourself" %><br>
+			<%=user.text_area :brief_intro ,class: 'form-control'%><br>
 
-<%=user.label :achievements %><br>
-<%=user.text_area :achievements %><br>
+			<%=user.label :achievements, "What are your Achievements?" %><br>
+			<%=user.text_area :achievements ,class: 'form-control'%><br>
 
-<%=user.label :rgsoc_reason %><br>
-<%=user.text_area :rgsoc_reason %><br>
+			<%=user.label :rgsoc_reason, "What is your Reason for Applying for RGSOC" %><br>
+			<%=user.text_area :rgsoc_reason ,class: 'form-control'%><br>
 
-<%=user.label :projects %><br>
-<%=user.text_area :projects %><br>
+			<%=user.label :projects, "What are your Projects of Choice?" %><br>
+			<%=user.text_area :projects ,class: 'form-control'%><br>
 
-<%=user.label :languages %><br>
-<%=user.text_field :languages %><br>
+			<%=user.label :languages, "Which are your preferred languages?" %><br>
+			<%=user.text_field :languages ,class: 'form-control'%><br>
 
-<%=user.label :fav_food %><br>
-<%=user.text_field :fav_food %><br>
+			<%=user.label :fav_food, "What is your favorite food, besides Chocolates?" %><br>
+			<%=user.text_field :fav_food ,class: 'form-control'%><br>
 
-<%=user.submit%>
-<%end%>
+			<%= user.label :avatar, "Upload Image"  %>
+			<%= user.file_field :avatar, class: 'form-control'%><br>
+			
+			<p><%=user.submit "Submit", class: "form-control btn btn-primary btn-lg raised"%></p>
+			
+			<%end%>
+		</div>
+	</div>
+
+</div>

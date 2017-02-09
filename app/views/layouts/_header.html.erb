@@ -1,13 +1,19 @@
 
-
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
+  <div class="container within_header">
     <%= link_to "Rails Hoppers", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Team Page", root_path %></li>
         <li><%= link_to "New User", new_user_path %></li>
-        <li><%= link_to "Log in", '#' %></li>
+        <%if current_page?(user_path(1))%>
+          <li><%= link_to "Ishita", user_path(2) %></li>
+        <%elsif current_page?(user_path(2))%>
+          <li><%= link_to "Jimmy", user_path(1) %></li>
+        <%else%>
+          <li><%= link_to "Ishita", user_path(2) %></li>
+          <li><%= link_to "Jimmy", user_path(1) %></li>
+        <%end%>
       </ul>
     </nav>
   </div>

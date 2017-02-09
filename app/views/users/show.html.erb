@@ -1,19 +1,19 @@
-<%if @user.name == "Ishita Chaurasia"%>
-	<h1><%=@user.name%></h1>
-
-<h3>Basic Information</h3>
-<p>Name</p><p><%=@user.name%></p>
-<p>Email<br> <%=@user.email%><br></p>
-<p>Year of Study <br> <%=@user.year_of_study%><br></p>
-<p>Give a brief introduction about yourself<br> <%=@user.brief_intro%><br></p>
-<p>Achievements<br> <%=@user.achievements%><br></p>
-<p>Your reasons for applying to RGSOC<br> <%=@user.rgsoc_reason%><br></p>
-<p>Projects of your Choice<br> <%=@user.projects%><br></p>
-<p>Which Languages you prefer<br> <%=@user.languages%><br></p>
-<p>Which is your favorite food<br> <%=@user.fav_food%><br></p>
-
-<p><%=link_to "Edit Details", edit_user_path(@user)%></p>
-
-<%else%>
-<%= render 'jimmy'%>
-<%end%>
+<div class ="jumbotron container">
+	<div class ="row">
+		<div class = "col col-md-10 col-md-offset-1">
+			<div class = "show_header">
+				<%= render 'show_header.html.erb'%>	
+			</div>	
+			Name <p class="panel panel-body"><%=@user.name%></p>
+			Email<p class="panel panel-body"> <%=@user.email%></p>
+			Year of Study <p class="panel panel-body"> <%=@user.year_of_study%></p>
+			Brief introduction<p class="panel panel-body"><%=@user.brief_intro%></p>
+			Achievements <p class="panel panel-body"><%=@user.achievements%></p>
+			Reasons for applying to RGSOC <p class="panel panel-body"><%=@user.rgsoc_reason%></p>
+			Projects of Choice <p class="panel panel-body"><%=@user.projects%></p>
+			Languages I prefer <p class="panel panel-body"><%=@user.languages%></p>
+			My favorite food <p class="panel panel-body"><%=@user.fav_food%></p>
+			<p class = "btn btn-primary btn-lg raised show_edit_btn"><%=link_to "Edit Details", edit_user_path(@user)%></p>
+		</div>
+	</div>
+</div>

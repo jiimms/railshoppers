@@ -7,6 +7,8 @@
   			<%@users.each do |user|%>
 			<div class = "col col-md-4 col-md-offset-1 text-center col_index">
 				<h3><%= link_to user.name, user_path(user) %></h3>
+					<%= image_tag user.avatar.url(:medium) %>
+				
 			</div>
 			<%end%>
 		</div>
